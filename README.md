@@ -30,12 +30,12 @@ function fetchData() {
   });
 }
 ```
-*This is a JavaScript function named fetchData() that uses XMLHttpRequest (XHR) to fetch data from a REST API endpoint.*
- *- It first creates a new instance of the XMLHttpRequest object using the new keyword.*
- *- It then uses the open() method to specify the HTTP method (GET) and the URL of the API endpoint to fetch data from. In this case, the URL is constructed dynamically using a string template literal with the value of the country variable interpolated into it.*
- *- It then sends the request to the server using the send() method of the XHR object.*
- *- It registers an event listener for the load event, which fires when the server responds with data. The event handler function extracts the response data from the responseText property of the XHR object using JSON.parse(), and then passes it to the renderCountry() function to display it on the page.*
-*Overall, this function fetches data from a REST API endpoint using XHR, and then renders the response data on the page.*
+* *This is a JavaScript function named fetchData() that uses XMLHttpRequest (XHR) to fetch data from a REST API endpoint.*
+* *- It first creates a new instance of the XMLHttpRequest object using the new keyword.*
+* *- It then uses the open() method to specify the HTTP method (GET) and the URL of the API endpoint to fetch data from. In this case, the URL is constructed dynamically using a string template literal with the value of the country variable interpolated into it.*
+* *- It then sends the request to the server using the send() method of the XHR object.*
+* *- It registers an event listener for the load event, which fires when the server responds with data. The event handler function extracts the response data from the responseText property of the XHR object using JSON.parse(), and then passes it to the renderCountry() function to display it on the page.*
+* *Overall, this function fetches data from a REST API endpoint using XHR, and then renders the response data on the page.*
 
 ## Fetch API
 The Fetch API is based on promises, which makes it easier to write asynchronous code compared to callbacks. It also provides a streamlined interface for setting headers and handling responses. The API is designed to work with a wide range of data formats, including JSON, text, HTML, and binary data. Fetch API has a more consistent and intuitive error handling mechanism than XHR. In XHR, errors were handled in a non-standard way and required a lot of boilerplate code. Fetch API, on the other hand, uses the standard JavaScript error handling mechanism, making it easier to write error-handling code.
@@ -50,10 +50,10 @@ const fetchData = () => {
     .catch(error => console.error(error)); // handle errors
 };
 ```
-*In this implementation:*
- *- We use the fetch() function to make the HTTP request and fetch the data from the API endpoint.*
- *- We then chain the .then() method to extract the JSON data from the response object using the json() method.*
- *- We then chain another .then() method to process the extracted data and log the name of the first language to the console.*
+* *In this implementation:*
+* *- We use the fetch() function to make the HTTP request and fetch the data from the API endpoint.*
+* *- We then chain the .then() method to extract the JSON data from the response object using the json() method.*
+* *- We then chain another .then() method to process the extracted data and log the name of the first language to the console.*
 
 *While we could certainly explore how async/await keywords can handle rejected and fulfilled promises from fetch() and response.json() separately, our focus here is on appreciating how much cleaner and more streamlined modern API fetching has become.*
 
