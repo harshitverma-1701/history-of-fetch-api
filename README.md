@@ -6,7 +6,7 @@ The Fetch API is a relatively new interface for fetching resources (including ac
 ## Table of Contents
 - [Introduction](#introduction)
 - [History](#history)
-- [Fetch API](#fetchapi)
+- [Fetch API](#fetch)
 - [References](#references) 
 
 ## Introduction
