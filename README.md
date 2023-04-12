@@ -30,7 +30,7 @@ function fetchData() {
   });
 }
 ```
-* *This is a JavaScript function named fetchData() that uses XMLHttpRequest (XHR) to fetch data from a REST API endpoint.*
+*This is a JavaScript function named fetchData() that uses XMLHttpRequest (XHR) to fetch data from a REST API endpoint.*
 * *- It first creates a new instance of the XMLHttpRequest object using the new keyword.*
 * *- It then uses the open() method to specify the HTTP method (GET) and the URL of the API endpoint to fetch data from. In this case, the URL is constructed dynamically using a string template literal with the value of the country variable interpolated into it.*
 * *- It then sends the request to the server using the send() method of the XHR object.*
@@ -50,7 +50,7 @@ const fetchData = () => {
     .catch(error => console.error(error)); // handle errors
 };
 ```
-* *In this implementation:*
+*In this implementation:*
 * *- We use the fetch() function to make the HTTP request and fetch the data from the API endpoint.*
 * *- We then chain the .then() method to extract the JSON data from the response object using the json() method.*
 * *- We then chain another .then() method to process the extracted data and log the name of the first language to the console.*
